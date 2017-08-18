@@ -15,7 +15,7 @@ The pages (which are Svelte components) are loaded/unloaded upon route change, w
 All the other features are up to you (how you will make AJAX requests, SCSS or LESS, which node libraries you want to use, etc).
 
 ### Installing SASS
-Simply run `npm install --save-dev sass-brunch` and rename your CSS files from `.css` to `.scss`. Its simple as that.
+No preprocessor is used by default. But if you want to use SASS in your peojct, you only need to run one command: `npm install --save-dev sass-brunch` and rename your CSS files from `.css` to `.scss`. Its simple as that.
 
 ### Using any other npm library
 Simply run `npm install --save my-awesome-lib` and import it into your desired `.js` file (using ES6 import syntax).
