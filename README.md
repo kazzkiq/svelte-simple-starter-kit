@@ -1,8 +1,8 @@
 # svelte-simple-starter-kit
 
-Start a SPA (Single Page Application) with Svelte in the easier way possible!
+A SPA (Single Page Application) starter-kit with Svelte, routing and other candies!
 
-This sample project features:
+Features:
 
 - ES6 -> ES5 compiling (via Babel)
 - Routing (via [roadtrip](https://github.com/Rich-Harris/roadtrip))
