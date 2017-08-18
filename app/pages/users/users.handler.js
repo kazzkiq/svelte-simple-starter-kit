@@ -5,10 +5,7 @@ export default class IndexHandler {
     return {
       enter(current, previous) {
         this.component = new Users({
-          target: document.getElementById('app'),
-          data: {
-            name: 'world'
-          }
+          target: document.getElementById('app')
         })
         console.log('Entered users!');
       },
