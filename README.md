@@ -5,6 +5,7 @@ This starter kit aims at fast, simple and clean builds for small projects.
 It features:
 
 - **Svelte** for components;
+- **Svelte/Store** for [state management](https://svelte.technology/guide#state-management).
 - **SASS** as CSS preprocessor;
 - **roadtrip** as routing tool;
 - **Rollup** as bundler/task-runner;
