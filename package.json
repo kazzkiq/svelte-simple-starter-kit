@@ -1,27 +1,19 @@
 {
-  "name": "brunch-app",
-  "description": "Brunch.io application",
-  "private": true,
-  "author": "Brunch",
-  "version": "0.0.1",
-  "repository": "",
-  "scripts": {
-    "start": "brunch watch --server -n",
-    "build": "brunch build --production"
-  },
-  "dependencies": {
-    "roadtrip": "^0.5.1"
-  },
+  "name": "svelte-app",
+  "version": "1.0.0",
   "devDependencies": {
-    "babel-brunch": "^6.1.1",
-    "babel-preset-latest": "^6.24.1",
-    "clean-css-brunch": "^2",
-    "closure-compiler-brunch": "^0.1.6",
-    "cssnano-brunch": "^1.1.8",
-    "postcss-brunch": "^2.0.5",
-    "sveltejs-brunch": "0.0.5",
-    "auto-reload-brunch": "^2",
-    "brunch": "^2",
-    "uglify-js-brunch": "^2"
+    "rollup": "^0.56.4",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^8.4.0",
+    "rollup-plugin-node-resolve": "^3.0.3",
+    "rollup-plugin-svelte": "^4.0.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "serve": "^6.5.1",
+    "svelte": "^1.56.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "serve public & rollup -c -w",
+    "start": "serve public"
   }
 }
