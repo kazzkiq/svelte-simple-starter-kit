@@ -1,8 +1,11 @@
 import svelte from 'rollup-plugin-svelte';
+import serve from 'rollup-plugin-serve'
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
 import uglify from 'rollup-plugin-uglify';
+import { sass } from 'svelte-preprocess-sass';
+
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -15,20 +18,31 @@ export default {
 		file: 'public/bundle.js'
 	},
 	plugins: [
+		serve({
+			contentBase: ['public'],
+			historyApiFallback: true,
+			port: 5100,
+			verbose: true,
+		}),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
+
 			// we'll extract any component CSS out into
 			// a separate file — better for performance
 			css: css => {
 				css.write('public/bundle.css');
 			},
 
+			preprocess: {
+        style: sass(),
+      },
+
 			// enable https://svelte.technology/guide#state-management
 			store: true,
 
 			// this results in smaller CSS files
-			cascade: false
+			cascade: false,
 		}),
 
 		// If you have external dependencies installed from

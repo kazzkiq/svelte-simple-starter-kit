@@ -1,10 +1,11 @@
-import App from './App.html';
+/*
+ * This is the entrypoint of all the JavaScript files.
+ */
 
-const app = new App({
-	target: document.body,
-	data: {
-		name: 'world'
-	}
-});
+import Routes from './routes';
 
-export default app;
+document.addEventListener('DOMContentLoaded', main);
+
+function main () {
+  window.Routes = new Routes();
+}
