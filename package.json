@@ -10,7 +10,7 @@
     "rollup-plugin-serve": "^0.4.2",
     "rollup-plugin-svelte": "^4.0.0",
     "rollup-plugin-uglify": "^3.0.0",
-    "serve": "^6.5.1",
+    "serve": "^7.0.0",
     "svelte": "^1.56.1",
     "svelte-preprocess-sass": "^0.1.0"
   },
