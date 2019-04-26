@@ -1,11 +1,11 @@
-# Svelte Simple Startet Kit
+# Svelte 2 Simple Startet Kit
 
 This starter kit aims at fast, simple and clean builds for small projects.
 
 It features:
 
-- **Svelte** for components;
-- **Svelte/Store** for [state management](https://svelte.technology/guide#state-management).
+- **Svelte 2** for components;
+- **Svelte/Store** for [state management](https://v2.svelte.dev/guide#state-management).
 - **SASS** as CSS preprocessor;
 - **roadtrip** as routing tool;
 - **Rollup** as bundler/task-runner;
